@@ -1,0 +1,32 @@
+div{
+	width:500px;
+	height: 500px;
+	border: 2px double black;
+	margin-bottom: 20px;
+}
+
+.bg1{
+	background: url('images/gomdol.jpg') no-repeat left top;
+	background-size: auto;
+}
+.bg2{
+	background: url('images/gomdol.jpg') no-repeat left top;
+	background-size: 200px 150px;
+}
+.bg3{
+	background: url('images/gomdol.jpg') no-repeat left top;
+	background-size: 60% 40%;
+}
+.bg4{
+	background: url('images/gomdol.jpg') no-repeat left top;
+	background-size: contain;
+}
+.bg5{
+	background: url('images/gomdol.jpg') no-repeat left top;
+	background-size: cover;
+}
+.bg6{
+	background: url('images/gomdol.jpg') no-repeat left top;
+	background-size: 100% 100%;
+}
+	

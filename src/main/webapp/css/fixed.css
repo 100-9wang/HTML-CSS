@@ -1,0 +1,11 @@
+#fx{
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+	background : pink;
+}
+
+#content {width: 400px;}
+p{ line-height:30px; }

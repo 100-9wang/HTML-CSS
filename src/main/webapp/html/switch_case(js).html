@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>선택문</title>
+	<script>
+		var site = prompt("네이버, 다음, 네이트, 구글 중 " +
+			"이동하고 싶은 포털 검색 사이트를 기재해 주세요.", "");
+		var url;
+
+		switch(site) {
+		case "구글" : url = "www.google.com";
+			break;
+		case "다음" : url = "www.daum.net";
+			break;
+		case "네이버" : url = "www.naver.com";
+			break;
+		case "네이트" : url = "www.nate.com";
+			break;
+		default : alert("보기 중 없는 사이트입니다.");				
+		}
+
+		if (url) {
+			location.href = "http://" + url;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#container{
+	width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+.left-img {
+	float: left;
+	margin-right:25px;
+}
+
+p{
+	line-height: 30px;
+}
+
+.mg{
+	margin-right: 25px;
+}

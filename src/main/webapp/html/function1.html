@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>함수</title>
+	<script>
+		var cnt = 0;
+
+		myfnc();
+
+		function myfnc() {
+			cnt++;
+			document.write("hello" + cnt,"<br>");
+		}
+
+		myfnc();
+
+		var thefnc = function() {
+			cnt++;
+			document.write("bye" + cnt, "<br>");
+		}
+
+		thefnc();
+</head>
+<body>
+
+</body>
+</html>

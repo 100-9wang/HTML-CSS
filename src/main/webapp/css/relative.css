@@ -1,0 +1,17 @@
+.box1{
+	float: left;
+	width: 100px;
+	background-color: #ffd800;
+	margin-right: 10px;
+	padding: 20px;
+}
+
+.box2 {
+	position: relative;
+	left: -50px;
+	top: 30px;
+	width: 300px;
+	background: #0094ff;
+	float: left;
+	padding: 20px;
+}

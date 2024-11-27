@@ -65,18 +65,23 @@ public class Signin extends HttpServlet {
 			System.out.println("try");
 			String sql1 = "SELECT * FROM USER_ WHERE NEW_ID=? AND NEW_PW1=?";
 			PreparedStatement pstmt = conn.prepareStatement(sql1);
-			pstmt.setString(1, request.getParameter("user_id"));
-			pstmt.setString(2, request.getParameter("user_pw"));
+			pstmt.setString(1, user_id);
+			pstmt.setString(2, user_pw);
 			ResultSet rs = pstmt.executeQuery();
-			if (rs.next()) {
-				String result1 = rs.getString("new_id");
-				String result2 = rs.getString("new_pw1");
-				if (result1.equals(request.getParameter("user_id")) && result2.equals(request.getParameter("user_pw"))) {
-					System.out.println("로그인 성공");
+			if (rs.next() == false) {
+				System.out.println("아이디 또는 비밀번호를 잘못입력하셨습니다.");
+				return;
 				} else {
-					System.out.println("로그인 실패");
-				} 
-			} 
+					String result1 = rs.getString("new_id");
+					String result2 = rs.getString("new_pw1");
+					if (result1.equals(user_id) && result2.equals(user_pw)) {
+						System.out.println("로그인 성공");
+					} else {
+						System.out.println("실패");
+						return;
+					}
+				}
+					
 			rs.close();
             pstmt.close();
         } catch (Exception e) {

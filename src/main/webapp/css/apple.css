@@ -1,0 +1,49 @@
+body h4 {
+	color: red;
+	font-weight: bolder;
+}
+
+.info {
+	color: yellow;
+}
+
+.content {
+	background-color: #804000;
+	text-align: left;
+	background-clip:border-box;
+	background-image:url('images/apple.jpg');
+}
+
+h1 {
+	color: white;
+	font-size: 35px;
+}
+p {
+	font-weight:bolder;
+	font-size: 20px;
+}
+.bluetxt {
+	color: blue;
+}
+
+#small {
+	font-size: 13px;
+	font-weight: 700;
+	
+}
+
+div {
+	border: 1px solid gray;
+	text-align: center;
+}
+
+.check {
+	text-align: left;
+	color: white;
+	background-color: #400000;
+	font-size: 13px;
+}
+
+.indent {
+	text-indent: 15px;
+}

@@ -1,0 +1,120 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	font-family: 'Noto sans' sans-serif;
+}
+
+.container {
+	position: absolute;
+	width: 1100px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #e7e7e7;
+}
+
+header {
+	position: relative;
+	height: 260px;
+	background: url('../images/bg.jpg') no-repeat center;
+}
+
+header h1 {
+	position: absolute;
+	right: 20px;
+	bottom: 80px;
+	font-size: 2.7em;
+	color: ivory;
+	text-shadow: 1px 2px 2px black;
+}
+
+header h2 {
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+	font-size: 2.2em;
+	color: yellow;
+	text-shadow: 1px 1px 1px black ;
+}
+
+.nav {
+	position: relative;
+	background: black;
+	margin-top: -15px;
+	width: 1100px;
+	height: 60px;
+}
+
+.nav ul {
+	list-style: none;
+	height: 40px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.nav ul li {
+	display: inline-block;
+	font-size: 15px;
+}
+
+.nav a, .nav a:visited {
+	padding: 10px 5px 5px 35px;
+	display: block;
+	color: white;
+	width: 150px;
+	text-decoration: none;
+}
+
+.nav a:hover, .nav  a:active, .nav a:focus {
+	text-shadow: 1px 2px 2px black;
+	color: lightyellow;
+}
+
+.side-content {
+	float: right;
+	width: 240px;
+	height: 600px;
+	background-color: mintcream;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.side-content img {
+	margin-bottom: 5px;
+	border: 1px solid gray;
+	opacity: 0.5;
+	text-align: center;
+	display: block;
+}
+
+.side-content img:hover {
+	border: 1px solid black;
+	opacity: 1.0;
+}
+
+.content {
+	background-color: white;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 765px;
+	height: 600px;
+	float: left;
+}
+
+footer {
+	padding: 10px 0;
+	background-color: darkgreen;
+	color: white;
+	text-align: center;
+	clear: both;
+	border: 1px solid orange;
+}
+
+header, section, footer, aside, article, figure {
+	display: block;
+}

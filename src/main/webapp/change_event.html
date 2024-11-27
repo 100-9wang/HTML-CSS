@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>이벤트</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$("#rel_site").on("change", function(){
+			 $(".txt").text($(this).val());
+			 var url = $('#rel_site').val();
+			 window.open(url);
+			});
+		});
+	</script>
+</head>
+<body>
+	<select id="rel_site">
+		<option value="">사이트 선택</option>
+		<option value="http://www.google.com/">구글</option>
+		<option value="http://www.nate.com/">네이트</option>
+		<option value="http://www.naver.com/">네이버</option>
+		<option value="http://www.daum.net/">다음</option>
+	</select>
+	<p class="txt"></p>
+</body>
+</html>

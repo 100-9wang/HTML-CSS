@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ajax 연습</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		function fn_process() {
+			$.ajax({
+				type:"get",
+				dataType:"text",
+				async:false,
+				url:"http://localhost:8090/inputoutput/ajaxTest01",
+				data: {param:"Hello, Jquery"}, // json type
+				success:function (data, textStatus) {
+					$('#message').append(data);
+				},
+				error:function (data, textStatus) {
+					alert("에러가 발생했습니다.");
+				},
+				complete:function (data, textStatus) {
+					alert("작업을 완료했습니다");
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="전송" onclick="fn_process()"/><br><br>
+	<div id="message"></div>
+</body>
+</html>

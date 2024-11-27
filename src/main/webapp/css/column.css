@@ -1,0 +1,32 @@
+body {
+font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+	padding: 20px;
+	width: 600px;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+	border-radius: 10px ;
+}
+
+.multi {
+	column-count: 4;
+	/* colum-width: 120px; */
+	column-rule: 2px dotted #000;
+	text-align: justify;
+}
+
+/* .multi h3 {
+	break-before: column;
+} */
+
+.no-col {
+	background: #f0f0f0;
+	margin: 10px 3px;
+	padding: 20px;
+	border-radius: 5px;
+	column-span: all;
+}

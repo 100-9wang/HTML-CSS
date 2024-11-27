@@ -1,0 +1,10 @@
+body {
+	background-color: pink;
+	color:blue;
+}
+
+h2{
+	background-color:yellow; /* 배경색은 상속X */
+	font-size: 20px;
+	color: brown;
+}

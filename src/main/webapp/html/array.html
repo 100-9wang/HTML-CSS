@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>배열 객체</title>
+	<script>
+		//주소값 하나씩 가져오기
+		var arr = [30, "따르릉", true];
+		document.write("<h3>배열값 가져오기 #1</h3>");
+		document.write(arr[0], "<br>");
+		document.write(arr[1], "<br>");
+		document.write(arr[2], "<br>");
+
+		//for문
+		document.write("<h3>배열값 가져오기 #2</h3>");
+		for(var i = 0; i < arr.length; i++) {
+			document.write(arr[i], "<br>");
+		}
+
+		//확장 for문
+		document.write("<h3>배열값 가져오기 #3</h3>");
+		for(i in arr) {
+			document.write(arr[i], "<br>");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

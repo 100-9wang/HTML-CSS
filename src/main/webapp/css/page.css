@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 96%;
+}
+
+/* haeder section */
+header {
+    width: 100%;
+    height: 110px;
+    position: relative;
+    background-color: black;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    margin-left: 44%;
+    justify-content: center;
+}
+
+.top-menu {
+    display: flex;
+    align-items: right;
+    font-size: 0.8em;
+    color: white;
+}
+
+.top-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.info, .shop {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.shop {
+    margin-right: 20px;
+}
+
+/* nav section */
+#nav-menu {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    padding-top: 4px;
+    text-align: center;
+    border-top: 0.1px solid rgb(70, 67, 67);
+    white-space: nowrap;
+}
+
+#nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-menu li {
+    margin: 0 20px;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+/* section */
+section {
+    width: 100%;
+    background-color: beige;
+    padding: 2% 20%;
+    text-align: center;
+    line-height: 50px;
+}
+
+#title {
+    font-size: 2em;
+}
+
+#browntext {
+    color: rgb(153, 102, 34);
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 30px;
+    margin-top: 20px;
+}
+
+td {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    line-height: 40px;
+}
+
+.name {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.144);
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* footer section */
+footer {
+    width: 100%;
+    height: 220px;
+    background-color: black;
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: rgb(71, 71, 71);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.ft-left {
+    float: left;
+}
+
+.ft-logo {
+    margin: 20px 0;
+}
+
+.fp {
+    margin-left: 25px;
+    line-height: 20px;
+}
+
+.ft-left p {
+    margin-bottom: 10px;
+}
+
+.ortext {
+    color: rgb(184, 120, 3);
+}
+
+.ft-right {
+    position: relative;
+    left: 80%;
+    bottom: 50%;
+}
+
+
+.ortext2 {
+    font-size: 22px;
+    line-height: 40px;
+    color: rgb(184, 120, 3);
+}
+
+.ft-right ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.ft-right a {
+    color: white;
+    text-decoration: none;
+}
+
+/* shop img */
+.a1 {
+    background-image: url('../images/a1.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.a2 {
+    background-image: url('../images/a2.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.a3 {
+    background-image: url('../images/a3.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.a4 {
+     background-image: url('../images/a4.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.b1 {
+     background-image: url('../images/b1.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.b2 {
+     background-image: url('../images/b2.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.b3 {
+     background-image: url('../images/b3.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.b4 {
+     background-image: url('../images/b4.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.c1 {
+     background-image: url('../images/c1.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.c2 {
+    background-image: url('../images/c2.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.c3 {
+     background-image: url('../images/c3.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+.c4 {
+    background-image: url('../images/c4.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align:bottom;
+}
+
+
+@media all and (min-width: 768px) {
+     #main {
+        justify-content: space-between;
+    }
+    
+    .a1, .a2{
+        width: 40%;
+        margin: 0;
+    }
+
+    .a3, .a4 {
+        width: 40%%;
+        margin: 0;
+    }
+
+    .b1, .b2 {
+        width: 40%;
+        margin: 0;
+    }
+
+    .b3, .b4 {
+        width: 40%;
+        margin: 0;
+    } 
+    
+    .c1, .c2{
+        width: 40%;
+        margin: 0;
+    } 
+    
+    .c3, .c4 {
+        width: 40%;
+        margin: 0;
+    }
+    
+    footer {
+        width: 100%;
+        background: #black;
+        height: 220px;
+        clear: both;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #main {
+        justify-content: space-between;
+    }
+    
+    .a1, .a2, .a3 {
+        width: 33%;
+        margin: 0;
+    }
+
+    .a4, .b1, .b2{
+        width: 33%;
+        margin: 0;
+    } 
+    
+    .b3, .b4, .c1{
+        width: 33%;
+        margin: 0;
+    } 
+    
+    .c2, .c3, .c4 {
+        width: 33%;
+        margin: 0;
+    }
+    
+    footer {
+        width: 100%;
+        background: #black;
+        height: 220px;
+        clear: both;
+    }
+}

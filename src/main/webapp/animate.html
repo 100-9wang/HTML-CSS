@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제이쿼리 - 시각효과메서드</title>
+        <style>
+            div{
+                position: relative;
+                width: 100px; height: 100px;
+                background-color: orange;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('button').click(function(){
+                    $('div').animate({
+                        left: 400
+                    },1000);
+                    $('div').animate({
+                        top: 400
+                    },1000);
+                    $('div').animate({
+                        left: 200	
+                    },1000);
+                    $('div').animate({
+                        top: 100
+                    },1000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button>GO!</button>
+        <hr>
+        <div></div>
+    </body>
+</html>

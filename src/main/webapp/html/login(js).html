@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html lang="ko">
+ <head>
+ <meta charset = "UTF-8">
+ <title> 함수 </title>
+ <script>
+ 	var rightId = "korea";
+ 	var rightPw = "1234";
+ 	function login(){
+ 	if(fom.id.value == rightId){
+ 	if(fom.pw.value == rightPw){
+ 	document.write(fom.id.value + "님 방문을 환영합니다");
+ 	}else{
+ 	alert("잘못된 비밀번호입니다.");
+ 	}
+ 	} else {
+ 	alert("존재하지 않는 아이디입니다.");
+ 	location.reload();
+ 	}
+ }
+ </script>
+ </head>
+ <body>
+ 	<
+ 	<form name="fom">
+ 	<h1 style="text-align:center">회원 가입창</h1>
+ 	<table align="center">
+ 		<tr>
+			<td width="200"><p align="right">아이디</td>
+			<td width="400"><input type="text" name="id"></td>
+		</tr>
+		<tr>
+			<td width="200"><p align="right">비밀번호</td>
+			<td width="400"><input type="password" name="pw"></td>
+		</tr>
+		<tr>
+			<td width="200"><p>&nbsp;</td>
+			<td width="400">
+				<input type="submit" value="로그인하기" onclick="Login()">
+			</td>
+		</tr>
+ 	</table>
+ 	</form>
+ </body>
+ </html>

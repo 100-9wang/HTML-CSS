@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>window 객체</title>
+	<script>
+		var addNum = 0;
+		var subNum = 1000;
+		var auto_1, auto_2;
+		
+		/*var auto_1 = setInterval(function() {
+			addNum++;
+			console.log("addNum : " + addNum);
+		}, 600);
+
+
+		var auto_2 = setInterval(function() {
+			subNum--;
+			console.log("subNum : " + subNum);
+		}, 600); */ 
+		
+		function startIntervals() {
+			if (auto_1) clearInterval(auto_1);
+			if (auto_2) clearInterval(auto_2);
+
+			auto_1 = setInterval(function() {
+				addNum++;
+				console.log("addNum : " + addNum);
+			}, 600);
+
+			auto_2 = setInterval(function() {
+				subNum--;
+				console.log("subNum : " + subNum);
+			}, 600);
+		}
+		
+		startIntervals();
+		
+	</script>
+</head>
+<body>
+	<h1>일정 시간 간격으로 값 증감시키기</h1>
+	<p>콘솔 패널을 열어 확인하세요.</p>
+	<button onclick="clearInterval(auto_1)">증가 정지</button>
+	<button onclick="clearInterval(auto_2)">감소 정지</button>
+	<button onclick="startIntervals()">증가 시작</button>
+</body>
+</html>

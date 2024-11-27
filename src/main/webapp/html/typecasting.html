@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>형변환</title>
+	<script>
+	var num = '100';
+	alert (parseInt(num, 2)); // 4
+	alert (parseInt(num, 8)); // 64
+	alert (parseInt(num, 10)); // 100
+	alert (parseInt(num, 16)); // 256
+
+	var num = '52.273e5';
+	alert(parseFloat(num)); // 5227300
+
+	var num = "일";
+
+	if(isNaN(num) == true) {
+		alert("숫자가 아닙니다");
+	} else {
+		alert("숫자 입니다");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
